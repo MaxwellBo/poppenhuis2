@@ -1,9 +1,8 @@
-import { useSearchParams } from "next/navigation";
 import React from "react";
 import { QueryPreservingLink } from "./QueryPreservingLink";
-import { loadUsers } from "./manifest";
+import { loadUsers } from "./db";
+import { ThirdPartyManifests } from "./ThirdPartyManifests";
       
-
 export default async function Home({
   searchParams,
 }: { searchParams: { manifest?: string }}) {
@@ -36,7 +35,7 @@ export default async function Home({
         <br />
         <details>
           <summary>Want to host your own content here?</summary>
-          {/* <ThirdPartyManifests /> */}
+          <ThirdPartyManifests />
         </details>
       </article>
     </main>

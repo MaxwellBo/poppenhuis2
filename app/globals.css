@@ -1,10 +1,6 @@
 body {
-  /** set a nicer serif font */
-  font-family: 'Gerogia', 'Lora', serif;
-  /** set a reasonable max-width */
   max-width: min(80vw, 100ch);
   margin: 2vw auto;
-  /** set a nice light tan background color */
   background-color: #fffff8;
   text-transform: lowercase;
 }
